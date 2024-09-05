@@ -1,0 +1,6 @@
+tasks:
+  - init: pip install selenium && export PYTHONWARNINGS="ignore:Unverified HTTPS request" # runs during prebuild
+    command: |
+      python FirstScenario.py
+      python SecondScenario.py
+      python ThirdScenario.py
